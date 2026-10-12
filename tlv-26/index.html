@@ -7,8 +7,8 @@
   <meta name="description" content="Frontier AI Security Forum — Tel Aviv edition. Sunday, November 22, 2026 at the Tel Aviv Museum of Art. Presented by Heron." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Bitcount+Grid+Single:wght@400..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
 
@@ -32,91 +32,98 @@
 <!-- STATUS LINE (top) -->
 <header id="statusbar" class="hidden">
   <div class="sb-left">
+    <span class="sb-logos">
+      <a href="https://aisecurity.forum/?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=header-logo-aisf" target="_blank" class="sb-heron" title="AI Security Forum">
+        <img src="assets/heron/aisf-logo.png" alt="AI Security Forum" />
+      </a>
+      <a href="https://www.heronsec.ai/?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=header-logo-heron" target="_blank" class="sb-heron" title="Presented by Heron">
+        <img src="assets/heron/heron-logo.png" alt="Heron" />
+      </a>
+    </span>
     <span class="sb-host">aisf-tlv</span><span class="sb-sep">:</span><span class="sb-path">~</span><span class="sb-sep">$</span>
     <nav class="sb-nav">
       <a href="#main" class="sb-win active">main</a>
       <a href="#about">about</a>
+      <a href="#speakers">speakers</a>
       <a href="#cfp">cfp</a>
-      <a href="https://heron.fillout.com/t/72s5ybhkUXus" target="_blank">apply</a>
+      <a href="https://heron.fillout.com/t/72s5ybhkUXus?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=nav-apply" target="_blank">apply</a>
     </nav>
   </div>
   <div class="sb-right">
     <span class="sb-clock" id="clock"></span>
-    <a href="https://www.heronsec.ai/" target="_blank" class="sb-heron" title="Presented by Heron">
-      <img src="assets/heron/heron-logo-phosphor.png" alt="Heron" />
-    </a>
   </div>
 </header>
 
 <!-- MAIN TERMINAL SESSION -->
 <main id="site" class="hidden">
+
+  <div class="rule"><span class="rule-mark">+</span><span class="rule-line"></span><span class="rule-mark">+</span></div>
+
   <div class="term">
+
+    <!-- SKYLINE BACKDROP (spans the hero + event block, bleeds off the right edge) -->
+    <div class="skyline-bg" aria-hidden="true">
+      <img src="assets/heron/skyline-v2_1.png" alt="" />
+    </div>
 
     <!-- BANNER -->
     <section id="main" class="blk">
-<pre class="banner">
-████████╗██╗    ██╗   ██╗
-╚══██╔══╝██║    ██║   ██║
-   ██║   ██║    ██║   ██║
-   ██║   ██║    ╚██╗ ██╔╝
-   ██║   ███████╗╚████╔╝
-   ╚═╝   ╚══════╝ ╚═══╝
-</pre>
-      <pre class="banner-sub">FRONTIER AI SECURITY FORUM · TEL AVIV · 2026</pre>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="banner-led">FRONTIER AI<br/>SECURITY FORUM</h1>
+          <p class="banner-sub">TEL AVIV &middot; 2026</p>
+          <p class="museum-caption">TEL AVIV MUSEUM OF ART</p>
 
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> whoami</p>
-      <p class="out hero-id"><span class="typed" data-text="Security research, engineering, and policy."></span><span class="cur">▋</span></p>
-      <p class="out hero-desc">300 leading cybersecurity researchers, engineers, and entrepreneurs figuring out how to secure AI on the path to superintelligence.</p>
+          <p class="out hero-id"><span class="typed" data-text="It's Time to Secure Intelligence"></span><span class="cur">▋</span></p>
+          <p class="out hero-desc">300 leading cybersecurity researchers, engineers, and entrepreneurs figuring out how to secure AI on the path to superintelligence.</p>
 
-      <div class="actions">
-        <a href="https://heron.fillout.com/t/72s5ybhkUXus" target="_blank" class="btn">./apply --now</a>
-        <a href="#cfp" class="btn ghost">./submit --talk</a>
+          <div class="actions">
+            <a href="https://heron.fillout.com/t/72s5ybhkUXus?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=hero-apply" target="_blank" class="btn primary">./apply --now</a>
+            <a href="#cfp" class="btn ghost">./submit --talk</a>
+          </div>
+          <p class="warn hero-warn">! spaces are limited - apply early to avoid disappointment!</p>
+        </div>
+
       </div>
     </section>
 
     <!-- EVENT.TXT -->
     <section class="blk">
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> cat event.txt</p>
       <div class="out kvs">
         <div class="kv"><span class="k">location</span><span class="eq">=</span><span class="v">Tel Aviv, Israel</span></div>
         <div class="kv"><span class="k">date</span><span class="eq">=</span><span class="v">Sunday, November 22, 2026</span></div>
         <div class="kv"><span class="k">capacity</span><span class="eq">=</span><span class="v">~300 (application-based)</span></div>
         <div class="kv"><span class="k">format</span><span class="eq">=</span><span class="v">9 AM – 7 PM · talks, workshops</span></div>
         <div class="kv"><span class="k">meals</span><span class="eq">=</span><span class="v">Breakfast, lunch, light dinner (and snacks) provided</span></div>
+        <div class="kv"><span class="k">ticket</span><span class="eq">=</span><span class="v">80 NIS · cancel until November 5, 2026 for a full refund</span></div>
         <div class="kv"><span class="k">venue</span><span class="eq">=</span><span class="v"><a href="https://www.tamuseum.org.il/en/" target="_blank">Tel Aviv Museum of Art</a> · <a href="https://maps.app.goo.gl/Mg1MZFnEeJ6qTXkHA" target="_blank">map ↗</a></span></div>
-        <div class="kv"><span class="k">host</span><span class="eq">=</span><span class="v">presented by Heron</span></div>
+        <div class="kv"><span class="k">host</span><span class="eq">=</span><span class="v">presented by Heron &amp; AISF</span></div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="blk">
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> cat about.md</p>
       <div class="out prose">
-        <p class="comment"># About the Forum</p>
-        <p>Frontier AI models are rapidly evolving into autonomous agents capable of multi-step, real-world execution. Recent incidents where evaluation models broke sandbox boundaries to exploit external infrastructure on Hugging Face highlight a critical reality: <span class="hl">capability scaling without matching security infrastructure creates severe vulnerabilities</span>, making frontier security essential to preventing catastrophic control failures.</p>
-        <p>The Tel Aviv Frontier AI Security Forum brings together <span class="hl">300 top cybersecurity researchers, engineers, and entrepreneurs</span> for an intimate look at what it takes to secure AI as it advances toward superintelligence. The conference centers on reducing frontier AI risks, with technical talks, hands-on workshops, 1:1 meetings, and a demo &amp; job fair.</p>
-        <p class="comment"># Planned topics</p>
-        <ul class="list two-col">
+        <p class="comment subtitle-red"># About the Forum</p>
+        <p class="lead">Frontier AI models are rapidly evolving into autonomous agents capable of multi-step, real-world execution. Recent incidents where evaluation models broke sandbox boundaries to exploit external infrastructure on Hugging Face highlight a critical reality: <span class="hl">capability scaling without matching security infrastructure creates severe vulnerabilities</span>, making frontier security essential to preventing catastrophic outcomes — whether through loss of control, misuse, or dangerous concentration of power.</p>
+        <p class="lead">The Tel Aviv Frontier AI Security Forum brings together <span class="hl">300 top cybersecurity researchers, engineers, and entrepreneurs</span> for an intimate look at what it takes to secure AI as it advances toward superintelligence. The conference centers on reducing frontier AI risks, with technical talks, hands-on workshops, 1:1 meetings, and a demo &amp; job fair.</p>
+        <p class="comment subtitle-red"># Planned topics</p>
+        <ul class="list two-col topics-list">
           <li><span class="arr">→</span> Threat models, AI worldviews, and plans for dealing with ASI</li>
           <li><span class="arr">→</span> AI Control and protocols for using untrusted AI</li>
           <li><span class="arr">→</span> Security for treaties, verification, and hardware</li>
-          <li><span class="arr">→</span> Internal deployment security risks</li>
+          <li><span class="arr">→</span> Rogue internal deployment and other internal deployment security risks</li>
           <li><span class="arr">→</span> SL5 - Nation-State Grade Security for Frontier AI</li>
           <li><span class="arr">→</span> Poisoning, secret loyalties, and backdoors</li>
         </ul>
-        <p>Also on our radar:</p>
-        <ul class="list two-col">
+        <p class="lead">Also on our radar:</p>
+        <ul class="list two-col topics-list">
           <li><span class="arr">→</span> Launching organisations</li>
+          <li><span class="arr">→</span> Funding for research, nonprofits, and startups</li>
           <li><span class="arr">→</span> A beginner's guide to getting involved</li>
-          <li><span class="arr">→</span> Funding pathways for frontier AI security research and startups</li>
         </ul>
-        <p class="comment"># Format</p>
-        <ul class="list">
-          <li><span class="arr">→</span> Application-based attendance, ~300 attendees</li>
-          <li><span class="arr">→</span> Keynote talks, workshops, and fireside chats</li>
-          <li><span class="arr">→</span> Parallel seminar rooms, one-on-ones, and meals</li>
-          <li><span class="arr">→</span> A full day, 9 AM – 7 PM, ending with a light dinner and a cocktail!</li>
-        </ul>
+        <p class="comment subtitle-red"># Format</p>
+        <p>Application-based attendance, ~300 attendees. Keynote talks, workshops, and fireside chats. Parallel seminar rooms, one-on-ones, and meals. A full day, 9 AM – 7 PM, ending with a light dinner and a cocktail!</p>
       </div>
     </section>
 
@@ -161,58 +168,102 @@
     </section>
     -->
 
-    <!-- PAST ATTENDEES -->
-    <section id="attendees" class="blk">
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> cat attendees.txt</p>
-      <div class="out prose">
-        <p class="comment"># Speakers at past events included people from:</p>
-        <p>Open AI, Anthropic, RAND, Redwood, Meta, Deepmind, Irregular, NVIDIA and others.</p>
+    <!-- SPEAKERS -->
+    <section id="speakers" class="blk">
+      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> ls speakers/</p>
+      <div class="out">
+        <p class="comment subtitle-red"># Speakers sneak peek</p>
+      <div class="speakers">
+        <div class="spk">
+          <img src="assets/speakers/yogev-bar-on.jpg" alt="Yogev Bar-On" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Yogev Bar-On</div>
+          <div class="spk-role">Co-founder &amp; CEO @ Attestable</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/marius-hobbhahn.jpg" alt="Marius Hobbhahn" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Marius Hobbhahn</div>
+          <div class="spk-role">CEO @ Apollo Research</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/abbey-chaver.jpg" alt="Abbey Chaver" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Abbey Chaver</div>
+          <div class="spk-role">Associate Program Officer @ Coefficient Giving</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/kristian-ronn.jpg" alt="Kristian Rönn" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Kristian Rönn</div>
+          <div class="spk-role">Co-founder &amp; CEO @ Lucid Computing</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/ben-hagag.jpg" alt="Ben Hagag" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Ben Hagag</div>
+          <div class="spk-role">Co-founder &amp; CEO @ Stealth</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/amir-sarid.jpg" alt="Amir Sarid" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Amir Sarid</div>
+          <div class="spk-role">Founder @ Stealth</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/shay-yahal.jpg" alt="Shay Yahal" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Shay Yahal</div>
+          <div class="spk-role">Co-founder @ Stealth</div>
+        </div>
+        <div class="spk">
+          <img src="assets/speakers/ross-matican.jpg" alt="Ross Matican" width="188" height="185" loading="lazy" />
+          <div class="spk-name">Ross Matican</div>
+          <div class="spk-role">Investor &amp; Grantmaker @ Halcyon Ventures</div>
+        </div>
+      </div>
       </div>
     </section>
 
     <!-- CFP -->
     <section id="cfp" class="blk">
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> cat cfp.md</p>
       <div class="out prose">
-        <p class="comment"># Call for Talks &nbsp;<span class="status-open">● OPEN</span> &nbsp;·&nbsp; deadline = rolling — apply ASAP</p>
+        <p class="comment subtitle-red"># Call for Talks &nbsp;<span class="status-open">● OPEN</span> &nbsp;·&nbsp; deadline = November 5, 2026</p>
         <p>We're looking for talks at the intersection of AI and security — offense and defense, technical and policy, research and practitioner. If you're working on something, we want to hear about it.</p>
         <div class="actions">
-          <a href="https://heron.fillout.com/t/62iuY4DnDyus" target="_blank" class="btn">./submit --talk</a>
-          <span class="warn">! rolling deadline — spots fill fast.</span>
+          <a href="https://heron.fillout.com/t/62iuY4DnDyus?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=cfp-submit" target="_blank" class="btn ghost">./submit --talk</a>
         </div>
       </div>
     </section>
 
     <!-- APPLY -->
     <section id="apply" class="blk">
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> ./register</p>
       <div class="out prose">
-        <p>Attendance is application-based. Express your interest to get early application access.</p>
         <div class="actions">
-          <a href="mailto:hello@heronsec.ai" class="btn">./contact --team</a>
-          <span class="warn">! registration form coming soon.</span>
+          <a href="https://heron.fillout.com/t/72s5ybhkUXus?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=apply-section" target="_blank" class="btn primary">./apply --now</a>
+          <a href="mailto:tlvaisecurityforum@heronsec.ai" class="btn">./contact --team</a>
         </div>
       </div>
     </section>
 
     <!-- PRESENTED BY -->
     <section class="blk">
-      <p class="cmd"><span class="usr">visitor@aisf-tlv</span><span class="pn">:~$</span> cat presented-by</p>
       <div class="out presented">
-        <a href="https://www.heronsec.ai/" target="_blank" class="heron-mark">
-          <img src="assets/heron/heron-logo-phosphor.png" alt="Heron" />
-        </a>
-        <p class="presented-note">The Tel Aviv Frontier AI Security Forum is presented by <a href="https://www.heronsec.ai/" target="_blank">Heron</a> — a gateway into the local AI security community and its programs.</p>
+        <div class="mark-row">
+          <a href="https://aisecurity.forum/?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=footer-logo-aisf" target="_blank" class="heron-mark" title="AI Security Forum">
+            <img src="assets/heron/aisf-logo.png" alt="AI Security Forum" />
+          </a>
+          <a href="https://www.heronsec.ai/?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=footer-logo-heron" target="_blank" class="heron-mark" title="Presented by Heron">
+            <img src="assets/heron/heron-logo.png" alt="Heron" />
+          </a>
+        </div>
+        <p class="presented-note">The Tel Aviv Frontier AI Security Forum is presented by <a href="https://www.heronsec.ai/?utm_source=tlv26-site&amp;utm_medium=referral&amp;utm_campaign=tlv-forum-26&amp;utm_content=footer-text" target="_blank">Heron</a> — a gateway into the local AI security community and its programs.</p>
       </div>
     </section>
 
   </div>
+
+  <div class="rule"><span class="rule-mark">+</span><span class="rule-line"></span><span class="rule-mark">+</span></div>
+
 </main>
 
 <!-- FOOTER STATUS -->
 <footer id="footbar" class="hidden">
   <span class="fb-mode">[NORMAL]</span>
-  <span class="fb-info">Presented by Heron · questions: <a href="mailto:hello@heronsec.ai">hello@heronsec.ai</a></span>
+  <span class="fb-info">Presented by Heron · questions: <a href="mailto:tlvaisecurityforum@heronsec.ai">tlvaisecurityforum@heronsec.ai</a></span>
 </footer>
 
 <script src="main.js"></script>
